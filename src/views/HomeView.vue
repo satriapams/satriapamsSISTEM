@@ -510,7 +510,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
 
 <style>
     .hero-bg {
-      background-image: url('src/assets/images/misc/cover.png');
+      background-image: to="src/assets/images/misc/cover.png";
       background-size: cover;
       background-position: center;
       height: 80vh;
