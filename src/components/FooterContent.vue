@@ -8,11 +8,11 @@
   
           <!-- Navigation Links -->
           <div class="flex space-x-4">
-            <a href="/" class="hover:underline">Home</a>
-            <a href="/blog" class="hover:underline">Blog</a>
-            <a href="/aboutus" class="hover:underline">About us</a>
-            <a href="/contact" class="hover:underline">Contact us</a>
-            <a href="/privacy" class="hover:underline">Privacy Policy</a>
+            <router-link to="/" class="hover:underline">Home</router-link>
+            <router-link to="/blog" class="hover:underline">Blog</router-link>
+            <router-link to="/aboutus" class="hover:underline">About us</router-link>
+            <router-link to="/contact" class="hover:underline">Contact us</router-link>
+            <router-link to="/privacy" class="hover:underline">Privacy Policy</router-link>
           </div>
         </div>
   
@@ -43,8 +43,8 @@
         >
           <div class="text-center md:text-left">
             Finstreet 118 2561 Fintown <br />
-            <a href="mailto:Hello@finsweet.com" class="hover:underline"
-              >Hello@finsweet.com</a
+            <router-link to="mailto:Hello@finsweet.com" class="hover:underline"
+              >Hello@finsweet.com</router-link
             >
             <br />
             020 7993 2905

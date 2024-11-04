@@ -27,12 +27,12 @@ import MainLayout from '@/layouts/MainLayout.vue'
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident.
           </p>
-          <a
-            href="blog/post"
+          <router-link
+            to="blog/post"
             class="w-[204px] flex items-center justify-center bg-x-blue px-[48px] py-[16px] text-white font-bold hover:bg-x-yellow transition duration-150 ease-in-out"
           >
             Read More >
-          </a>
+          </router-link>
         </div>
         <img
           src="@/assets/images/misc/man-with-white-shirt.png"
@@ -50,7 +50,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
         <div
           class="flex flex-col gap-8 pt-[48px] border-t border-x-mediumgrey border-opacity-32"
         >
-          <a href="blog/post" class="flex justify-start items-center gap-8">
+          <router-link to="blog/post" class="flex justify-start items-center gap-8">
             <img
               src="@/assets/images/misc/two-woman-in-erase-board.png"
               alt="Two woman in erase board"
@@ -72,8 +72,8 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 cupidatat non proident.
               </p>
             </div>
-          </a>
-          <a href="blog/post" class="flex justify-start items-center gap-8">
+          </router-link>
+          <router-link to="blog/post" class="flex justify-start items-center gap-8">
             <img
               src="@/assets/images/misc/people-doing-handshake.png"
               alt="People doing handshake"
@@ -95,8 +95,8 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 cupidatat non proident.
               </p>
             </div>
-          </a>
-          <a href="blog/post" class="flex justify-start items-center gap-8">
+          </router-link>
+          <router-link to="blog/post" class="flex justify-start items-center gap-8">
             <img
               src="@/assets/images/misc/woman-looking-man.png"
               alt="Woman looking at man"
@@ -118,8 +118,8 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 cupidatat non proident.
               </p>
             </div>
-          </a>
-          <a href="blog/post" class="flex justify-start items-center gap-8">
+          </router-link>
+          <router-link to="blog/post" class="flex justify-start items-center gap-8">
             <img
               src="@/assets/images/misc/people-walking.png"
               alt="People walking"
@@ -141,8 +141,8 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 cupidatat non proident.
               </p>
             </div>
-          </a>
-          <a href="blog/post" class="flex justify-start items-center gap-8">
+          </router-link>
+          <router-link to="blog/post" class="flex justify-start items-center gap-8">
             <img
               src="@/assets/images/misc/two-woman-in-erase-board.png"
               alt="Two woman in erase board"
@@ -164,17 +164,17 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 cupidatat non proident.
               </p>
             </div>
-          </a>
+          </router-link>
           <div class="flex justify-center items-center gap-4">
-            <a
+            <router-link
               class="text-x-mediumgrey text-2xl text-center font-bold leading-[32px]"
-              href="#"
-              >< Prev</a
+              to="#"
+              >< Prev</router-link
             >
-            <a
+            <router-link
               class="text-x-black text-3xl text-center font-bold leading-[40px] tracking-[-1px]"
-              href="#"
-              >Next ></a
+              to="#"
+              >Next ></router-link
             >
           </div>
         </div>

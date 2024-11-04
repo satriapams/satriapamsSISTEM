@@ -14,7 +14,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
         <span class="mt-8 text-lg">| October 28 2024</span>
         <h4 class="mt-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</h4>
         <h4 class="text-lg">eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</h4>
-        <a href="blog/post" class="Read-More">Read More</a>
+        <router-link to="blog/post" class="Read-More">Read More</router-link>
       </div>
     </section>
 
@@ -25,8 +25,8 @@ import MainLayout from '@/layouts/MainLayout.vue'
       <header class="flex justify-between items-center text-4xl font-bold text-gray-800 mb-6">
         <h1 class="flex-1 text-center tracking-tighter">Featured Post</h1>
         <h2 class="flex-1 text-center tracking-tighter">All Posts</h2>
-        <a href="/page" class="my-auto text-base text-yellow-300" tabindex="0"
-          >View All</a
+        <router-link to="/page" class="my-auto text-base text-yellow-300" tabindex="0"
+          >View All </router-link
         >
       </header>
         <section class="mt-9 max-w-full">
@@ -40,7 +40,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 class="w-full h-auto max-h-[250px] object-contain"
               />
               <p class="mt-4 text-sm font-medium text-black">
-                By <a href="#author" class="text-yellow-300">John Doe</a> | May
+                By <router-link to="#author" class="text-yellow-300">John Doe</router-link> | May
                 23, 2022
               </p>
               <h3 class="mt-4 text-3xl font-bold text-gray-800 leading-tight">
@@ -52,11 +52,11 @@ import MainLayout from '@/layouts/MainLayout.vue'
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident.
               </p>
-              <a
-                href="blog/post"
+              <router-link
+                to="blog/post"
                 class="inline-block mt-8 px-12 py-4 bg-blue-600 text-lg text-white"
                 tabindex="0"
-                >Read More &gt;</a
+                >Read More & gt;</router-link
               >
             </div>
           </article>
@@ -64,7 +64,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
           <aside class="w-full md:w-2/5 space-y-5">
             <article class="py-7 px-5 bg-white">
               <p class="text-sm text-gray-800">
-                By <a href="#author" class="text-yellow-300">John Deo</a> | Aug
+                By <router-link to="#author" class="text-yellow-300">John Deo</router-link> | Aug
                 23, 2021
               </p>
               <h3 class="mt-2 text-2xl font-bold text-gray-800 leading-8">
@@ -73,7 +73,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
             </article>
             <article class="py-7 px-5 bg-yellow-50">
               <p class="text-sm text-gray-800">
-                By <a href="#author" class="text-yellow-300">John Doe</a> | Aug
+                By <router-link to="#author" class="text-yellow-300">John Doe</router-link> | Aug
                 23, 2021
               </p>
               <h3 class="mt-2 text-2xl font-bold text-gray-800 leading-8">
@@ -82,7 +82,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
             </article>
             <article class="py-7 px-5 bg-white">
               <p class="text-sm text-gray-800">
-                By <a href="#author" class="text-yellow-300">John Doe</a> | Aug
+                By <router-link to="#author" class="text-yellow-300">John Doe</router-link> | Aug
                 23, 2021
               </p>
               <h3 class="mt-2 text-2xl font-bold text-gray-800 leading-8">
@@ -91,7 +91,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
             </article>
             <article class="py-7 px-5 bg-white">
               <p class="text-sm text-gray-800">
-                By <a href="#author" class="text-yellow-300">John Doe</a> | Aug
+                By <router-link to="#author" class="text-yellow-300">John Doe</router-link> | Aug
                 23, 2021
               </p>
               <h3 class="mt-2 text-2xl font-bold text-gray-800 leading-8">
@@ -146,14 +146,14 @@ import MainLayout from '@/layouts/MainLayout.vue'
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a
-                    href="#"
+                  <router-link
+                    to="#"
                     data-layername="readMore"
                     class="self-start mt-7 text-lg leading-8 text-yellow-600 hover:text-yellow-400 transition-colors duration-200"
                     tabindex="0"
                   >
                     Read More &gt;
-                  </a>
+                  </router-link>
                 </div>
               </article>
 
@@ -497,13 +497,13 @@ import MainLayout from '@/layouts/MainLayout.vue'
             </p>
 
             <!-- Button -->
-            <a
-        href="/join"
+            <router-link
+        to="/join"
         class="mt-8 px-10 py-3 mb-20 text-lg leading-none text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg transition"
         aria-label="Join our team"
       >
         Join Now
-      </a>
+      </router-link>
     </section>
   </MainLayout>
 </template>
